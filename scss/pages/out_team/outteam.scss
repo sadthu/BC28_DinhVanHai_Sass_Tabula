@@ -1,2 +1,65 @@
 @import '../../base/base';
 @import '../../themes/variable';
+
+header {
+    .header__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        .logo {
+            a {
+                img {
+                    height: 80px;
+                }
+            }
+        }
+
+        .navinfor {
+            nav {
+                padding: 0px;
+                .navinfor__btn {}
+
+                .navinfor__list {
+                    gap: $text-3xl;
+
+                    ul {
+                        gap: $text-2xl;
+                        li {
+                            a {
+                                color: $text-c1-dark;
+                                font-size: $text-2xs;
+                                font-weight: $text-medium;
+                            }
+                        }
+                    }
+
+                    .contact {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+                        .contact__tel {
+                            background-color: #bc218b;
+                            border-radius: $text-5xl;
+                            padding: $text-xs $text-2xl;
+                            font-size: $text-2xs;
+                            color:$text-c1-light;
+                            font-weight: $text-medium;
+                            i {}
+
+                            span {}
+                        }
+
+                        .contact__link {
+                            i {
+                                margin-left: 5px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
