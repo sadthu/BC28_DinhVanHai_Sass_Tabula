@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+:root {
+  --animate-delay: 0.5s;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -30,10 +34,34 @@ header .content__wrap .navinfor nav .navinfor__list {
 header .content__wrap .navinfor nav .navinfor__list ul {
   gap: 20px;
 }
+header .content__wrap .navinfor nav .navinfor__list ul li {
+  position: relative;
+}
+header .content__wrap .navinfor nav .navinfor__list ul li::after {
+  content: "";
+  left: 24px;
+  width: 9px;
+  height: 9px;
+  bottom: -20px;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0, 0);
+  transition: all 0.3s linear;
+  background-color: #bc218b;
+}
+header .content__wrap .navinfor nav .navinfor__list ul li:hover a {
+  color: #bc218b;
+}
+header .content__wrap .navinfor nav .navinfor__list ul li:hover::after {
+  width: 10px;
+  height: 10px;
+  transform: scale(1, 1);
+}
 header .content__wrap .navinfor nav .navinfor__list ul li a {
   color: #000;
   font-size: 13px;
   font-weight: 600;
+  transition: all 0.2s linear;
 }
 header .content__wrap .navinfor nav .navinfor__list .contact {
   display: flex;
@@ -48,8 +76,25 @@ header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel {
   font-size: 14px;
   color: #fff;
   font-weight: 500;
+  border: 1px solid #bc218b;
+  transition: all 0.3s linear;
+  cursor: pointer;
 }
-header .content__wrap .navinfor nav .navinfor__list .contact .contact__link i {
+header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel:hover {
+  background-color: #fff;
+  color: #bc218b;
+}
+header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel i {
+  margin-right: 5px;
+}
+header .content__wrap .navinfor nav .navinfor__list .contact .contact__link a {
+  color: #000;
+  transition: all 0.2s linear;
+}
+header .content__wrap .navinfor nav .navinfor__list .contact .contact__link a:hover {
+  color: #bc218b;
+}
+header .content__wrap .navinfor nav .navinfor__list .contact .contact__link a i {
   margin-left: 5px;
 }
 
@@ -85,6 +130,44 @@ header .content__wrap .navinfor nav .navinfor__list .contact .contact__link i {
 .member .content__wrap {
   padding: 0;
 }
-.member .content__wrap .member__list .member__item .member__infor--img img {
+.member .content__wrap .member__list .member__item {
+  padding: 15px 15px;
+}
+.member .content__wrap .member__list .member__item .member__item--wrap {
+  background-color: #fff;
+  padding: 0;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.member .content__wrap .member__list .member__item .member__item--wrap:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.member .content__wrap .member__list .member__item .member__item--wrap .member__infor--img {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.member .content__wrap .member__list .member__item .member__item--wrap .member__infor--img img {
   width: 100%;
+  transform: scale(1, 1);
+  transition: all 0.5s linear;
+}
+.member .content__wrap .member__list .member__item .member__item--wrap .member__infor--img img:hover {
+  transform: scale(1.05, 1.05);
+}
+.member .content__wrap .member__list .member__item .member__item--wrap .member__infor--text {
+  padding: 20px 20px;
+  text-align: center;
+}
+.member .content__wrap .member__list .member__item .member__item--wrap .member__infor--text h3 {
+  color: #bc218b;
+  font-size: 12px;
+  font-weight: 600;
+}
+.member .content__wrap .member__list .member__item .member__item--wrap .member__infor--text h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.member .content__wrap .member__list .member__item .member__item--wrap .member__infor--text p {
+  font-weight: 600;
+  font-size: 14px;
 }

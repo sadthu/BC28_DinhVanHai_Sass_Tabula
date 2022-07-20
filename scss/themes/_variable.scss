@@ -4,6 +4,7 @@
 $text-c1-primary: rgb(42, 115, 221);
 $text-c1-dark: #000;
 $text-c1-light: #fff;
+$text-c1-pink:#bc218b;
 
 //text-size
 $text-xs: 10px;
@@ -24,4 +25,7 @@ $text-medium: 500;
 $text-semibold: 600;
 $text-bold: 700;
 
+:root {
+    --animate-delay: 0.5s;
+}
 

@@ -35,10 +35,38 @@ header {
                         gap: $text-2xl;
 
                         li {
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                left: 24px;
+                                width: 9px;
+                                height: 9px;
+                                bottom: -20px;
+                                position: absolute;
+                                border-radius: 50%;
+                                transform: scale(0, 0);
+                                transition: all 0.3s linear;
+                                background-color: $text-c1-pink;
+                            }
+
+                            &:hover {
+                                a {
+                                    color: $text-c1-pink;
+                                }
+
+                                &::after {
+                                    width: $text-xs;
+                                    height: $text-xs;
+                                    transform: scale(1, 1);
+                                }
+                            }
+
                             a {
                                 color: $text-c1-dark;
                                 font-size: 13px;
                                 font-weight: $text-semibold;
+                                transition: all 0.2s linear;
                             }
                         }
                     }
@@ -47,25 +75,56 @@ header {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        gap: 10px;
+                        gap: $text-xs;
 
                         .contact__tel {
-                            background-color: #bc218b;
+                            background-color: $text-c1-pink;
                             border-radius: $text-5xl;
                             padding: $text-2xs $text-2xl;
                             font-size: $text-3xs;
                             color: $text-c1-light;
                             font-weight: $text-medium;
+                            border: 1px solid $text-c1-pink;
+                            transition: all 0.3s linear;
+                            cursor: pointer;
+                            // position: relative;
+                            // &::after {
+                            //     content: "";
+                            //     left: 0;
+                            //     top: 0;
+                            //     width: 100%;
+                            //     height: 100%;
+                            //     position: absolute;
+                            //     border-radius: $text-5xl;
+                            //     // transform: scale(0, 0);
+                            //     // transition: all 0.3s linear;
+                            //     // background-color: $text-c1-light;
+                            // }
+                            &:hover {
+                                background-color: $text-c1-light;
+                                color: $text-c1-pink;
 
-                            i {}
+                            }
+                            i {
+                                margin-right: 5px;
+                            }
 
-                            span {}
+                            span {
+                            }
                         }
 
                         .contact__link {
-                            i {
-                                margin-left: 5px;
+                            a {
+                                color: $text-c1-dark;
+                                transition: all 0.2s linear;
 
+                                &:hover {
+                                    color: $text-c1-pink;
+                                }
+
+                                i {
+                                    margin-left: 5px;
+                                }
                             }
                         }
                     }
@@ -81,8 +140,10 @@ header {
     padding: 55px 0;
     position: relative;
     background: url(../../../images/yellow_top_wave_01.png) top left/120% no-repeat, url(../../../images/Violet_top_left_wave.png) bottom left /100% 30% no-repeat;
+
     .content__wrap {
         padding: 0;
+
         .about__intro {
             display: flex;
             align-items: center;
@@ -91,7 +152,7 @@ header {
             .about-text {
                 h3 {
                     font-size: 15px;
-                    color: #bc218b;
+                    color: $text-c1-pink;
                     font-weight: $text-semibold;
                 }
 
@@ -112,22 +173,54 @@ header {
     padding: 30px 0;
     background: url(../../../images/Wave_White_bottom_right_shape_01.png)bottom / contain no-repeat;
     background-color: #dcd1f0;
+
     .content__wrap {
         padding: 0;
+
         .member__list {
             .member__item {
-                .member__infor--img {
-                    img {
-                        width: 100%;
+                padding: 15px 15px;
+                
+                .member__item--wrap {
+                    background-color: #fff;
+                    padding: 0;
+                    border-radius: 10px;
+                    transition: all 0.3s linear;
+                    &:hover {
+                        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
                     }
-                }
+                    .member__infor--img {
+                        overflow: hidden;
+                        border-radius: 10px 10px 0 0;
+                        img {
+                            width: 100%;
+                            transform: scale(1,1);
+                            transition: all 0.5s linear;
+                            &:hover {
+                                transform: scale(1.05,1.05);
+                            }
+                        }
+                    }
 
-                .member__infor--text {
-                    h3 {}
+                    .member__infor--text {
+                        padding: 20px 20px;
+                        text-align: center;
+                        h3 {
+                            color: $text-c1-pink;
+                            font-size: $text-2xs;
+                            font-weight: $text-semibold;
+                        }
 
-                    h4 {}
+                        h4 {
+                            font-weight: $text-bold;
+                            font-size: $text-2xl;
+                        }
 
-                    p {}
+                        p {
+                            font-weight: $text-semibold;
+                            font-size: $text-3xs;
+                        }
+                    }
                 }
             }
         }
