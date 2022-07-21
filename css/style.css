@@ -78,11 +78,25 @@ header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel {
   font-weight: 500;
   border: 1px solid #bc218b;
   transition: all 0.3s linear;
-  cursor: pointer;
+  position: relative;
+}
+header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel::after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50px;
+  transform: scale(0, 0);
+  transition: all 0.3s linear;
+  background-color: #fff;
 }
 header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel:hover {
-  background-color: #fff;
   color: #bc218b;
+}
+header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel:hover::after {
+  transform: scale(1, 1);
 }
 header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel i {
   margin-right: 5px;
@@ -152,7 +166,7 @@ header .content__wrap .navinfor nav .navinfor__list .contact .contact__link a i 
   transition: all 0.5s linear;
 }
 .member .content__wrap .member__list .member__item .member__item--wrap .member__infor--img img:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.05);
 }
 .member .content__wrap .member__list .member__item .member__item--wrap .member__infor--text {
   padding: 20px 20px;
