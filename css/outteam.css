@@ -70,33 +70,19 @@ header .content__wrap .navinfor nav .navinfor__list .contact {
   gap: 10px;
 }
 header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel {
-  background-color: #bc218b;
   border-radius: 50px;
   padding: 12px 20px;
   font-size: 14px;
   color: #fff;
   font-weight: 500;
-  border: 1px solid #bc218b;
-  transition: all 0.3s linear;
-  position: relative;
-}
-header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel::after {
-  content: "";
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 50px;
-  transform: scale(0, 0);
-  transition: all 0.3s linear;
+  border: none;
   background-color: #fff;
+  box-shadow: 0 0 0 50px #bc218b inset;
+  transition: all 0.2s linear;
 }
 header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel:hover {
+  box-shadow: 0 0 0 1px #bc218b inset;
   color: #bc218b;
-}
-header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel:hover::after {
-  transform: scale(1, 1);
 }
 header .content__wrap .navinfor nav .navinfor__list .contact .contact__tel i {
   margin-right: 5px;
