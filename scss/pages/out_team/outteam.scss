@@ -218,3 +218,55 @@ header {
         }
     }
 }
+
+.find {
+    .content__wrap {
+        .find__img {
+            img {
+
+            }
+        }
+
+        .find__group {
+            .find__infor {
+                .name {
+                    i {
+
+                    }
+                    input {
+
+                    }
+                }
+                .email {
+                    i {
+
+                    }
+                    input {
+
+                    }
+                }
+            }
+            .language-list {
+                i {
+
+                }
+                .language {
+                    option {
+
+                    }
+                }
+            }
+            .message {
+                i {
+
+                }
+                .text {
+                    
+                }
+            }
+            .btn-send {
+
+            }
+        }
+    }
+}
