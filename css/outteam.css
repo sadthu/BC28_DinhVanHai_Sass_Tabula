@@ -171,3 +171,156 @@ header .content__wrap .navinfor nav .navinfor__list .contact .contact__link a i 
   font-weight: 600;
   font-size: 14px;
 }
+
+.find {
+  padding-top: 56px;
+  background: url(../../../images/accent_bottom_wave_01.png) bottom center/contain no-repeat;
+}
+.find .content__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.find .content__wrap .find__img {
+  padding: 0 40px;
+}
+.find .content__wrap .find__img img {
+  width: 100%;
+}
+.find .content__wrap .find__group {
+  padding: 25px 20px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.find .content__wrap .find__group .find__header h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.find .content__wrap .find__group .find__infor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.find .content__wrap .find__group .find__infor .name {
+  position: relative;
+  border-radius: 50px;
+}
+.find .content__wrap .find__group .find__infor .name .name__icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  line-height: 1;
+}
+.find .content__wrap .find__group .find__infor .name .name__icon i {
+  color: #bc218b;
+  font-size: 14px;
+}
+.find .content__wrap .find__group .find__infor .name .name__text input {
+  font-size: 12px;
+  border: 1px solid #e7e7e7;
+  padding: 11px 11px 11px 39px;
+  border-radius: 50px;
+  transition: all 0.3s linear;
+}
+.find .content__wrap .find__group .find__infor .name .name__text input:focus-visible {
+  border: 1px solid rgba(0, 0, 0, 0.4509803922);
+  outline: none;
+}
+.find .content__wrap .find__group .find__infor .email {
+  position: relative;
+  border-radius: 50px;
+}
+.find .content__wrap .find__group .find__infor .email .email__icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  line-height: 1;
+}
+.find .content__wrap .find__group .find__infor .email .email__icon i {
+  color: #bc218b;
+  font-size: 14px;
+}
+.find .content__wrap .find__group .find__infor .email .email__text input {
+  font-size: 12px;
+  border: 1px solid #e7e7e7;
+  padding: 11px 11px 11px 39px;
+  border-radius: 50px;
+  transition: all 0.3s linear;
+}
+.find .content__wrap .find__group .find__infor .email .email__text input:focus-visible {
+  border: 1px solid rgba(0, 0, 0, 0.4509803922);
+  outline: none;
+}
+.find .content__wrap .find__group .language-list {
+  position: relative;
+  padding: 14px 0;
+}
+.find .content__wrap .find__group .language-list .language__icon {
+  position: absolute;
+  top: 23px;
+  left: 16px;
+  z-index: 1;
+}
+.find .content__wrap .find__group .language-list .language__icon i {
+  color: #bc218b;
+  font-size: 14px;
+}
+.find .content__wrap .find__group .language-list .language__select .language {
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  padding: 11px 11px 11px 39px;
+  font-size: 12px;
+  border-radius: 50px;
+  transition: all 0.3s linear;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.find .content__wrap .find__group .language-list .language__select .language:focus-visible {
+  border: 0.5px solid rgba(0, 0, 0, 0.4509803922);
+  outline: none;
+}
+.find .content__wrap .find__group .message {
+  position: relative;
+}
+.find .content__wrap .find__group .message .icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+.find .content__wrap .find__group .message .icon i {
+  color: #bc218b;
+  font-size: 14px;
+}
+.find .content__wrap .find__group .message .text {
+  font-size: 12px;
+}
+.find .content__wrap .find__group .message .text .text__content {
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  border: 1px solid #e7e7e7;
+  padding: 11px 11px 11px 39px;
+  transition: all 0.3s linear;
+}
+.find .content__wrap .find__group .message .text .text__content:focus-visible {
+  border: 0.5px solid rgba(0, 0, 0, 0.4509803922);
+  outline: none;
+}
+.find .content__wrap .find__group .btn-send {
+  margin: 40px 0;
+  border-radius: 50px;
+  padding: 12px 50px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 0 0 50px #bc218b inset;
+  transition: all 0.2s linear;
+}
+.find .content__wrap .find__group .btn-send:hover {
+  box-shadow: 0 0 0 1px #bc218b inset;
+  color: #bc218b;
+}
